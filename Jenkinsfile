@@ -26,7 +26,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'sshpass -p shivatomcat scp target/gamutkart.war shivatomcat@172.31.81.38:/home/shivatomcat/apache-tomcat-9.0.85/webapps'
+		sh 'sshpass -p shivatom scp target/gamutkart.war shivatom@172.31.81.38:/home/shivatom/apache-tomcat-9.0.85/webapps'
 	}
     }
 }
